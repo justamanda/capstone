@@ -1,0 +1,103 @@
+html{
+  font-family: 'Raleway', sans-serif;
+  font-size:16px;
+  color:#324347;
+  line-height:1.2;
+}
+/* Header section */
+header{
+  background-color:white;
+  height:4rem;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+}
+.logo{
+  display:flex;
+  align-items:center;
+  height:100%;
+}
+.logo img{
+  height:90%;
+}
+.logo p{
+  font-size:2rem;
+  font-weight:bold;
+}
+.colmar{
+  color:#8ECCA8;
+}
+.academy{
+  color:#3C887E;
+}
+nav{
+  list-style: none;
+  display:flex;
+  align-items:center;
+  padding-right:.5rem;
+}
+nav li{
+  color:#3D1E17;
+  padding:1rem;
+}
+nav li a:hover{
+  color:#3C887E;
+  text-decoration:underline;
+  font-size:1.05rem;
+  transition:font-size .5s ease-in .1s, color .5s ease-in .1s;
+}
+nav li a:visited{
+  color:#8ECCA8;
+}
+/* Jumbotron banner */
+.contrast-container-top{
+  background-color:rgba(187,171,163, .5);
+  width:100%;
+  display:flex;
+}
+.contrast-container-top img{
+  width:60%;
+  height:100%;
+  padding:2rem 1.5rem;
+  display:flex;
+}
+.contrast-container-top .banner{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+}
+h1{
+  color:#3D1E17;
+  font-size:4rem;
+  font-family:'Poppins', sans-serif;
+  font-weight:bolder;
+  padding:1rem;
+  padding-right:2rem;
+}
+h2{
+  font-size:1.5rem;
+  font-weight:bold;
+  padding:1.5rem;
+  color:#324347;
+}
+.banner .button{
+  display:flex;
+  justify-content:center;
+  background-color:#8ECCA8;
+  padding:.5rem;
+  width:80%;
+  margin:1rem;
+
+}
+.button a{
+  color:white;
+  font-size:1.5rem;
+  font-family:'Poppins', sans-serif;
+}
+.button a:hover{
+  color:#324347;
+  transition:color 1s linear .2s;
+}
