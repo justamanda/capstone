@@ -3,9 +3,11 @@ html{
   font-size:16px;
   color:#324347;
   line-height:1.2;
+  width:100%;
 }
 /* Header section */
 header{
+  position:fixed;
   background-color:white;
   height:4rem;
   width:100%;
@@ -38,6 +40,9 @@ nav{
   align-items:center;
   padding-right:.5rem;
 }
+.mobile-nav{
+  display:none;
+}
 nav li{
   color:#3D1E17;
   padding:1rem;
@@ -51,6 +56,55 @@ nav li a:hover{
 nav li a:visited{
   color:#8ECCA8;
 }
+@media only screen and (max-width:1000px){
+nav{
+  display:none;
+}
+.mobile-nav{
+  display:flex;
+  height:100%;
+  width:75%;
+  justify-content: space-around;
+}
+header{
+  justify-content: center;
+}
+
+}
+@media only screen and (max-width:490px){
+  .colmar,
+  .academy{
+    display:none;
+  }
+  .logo{
+    height:70%;
+    width:25%;
+    display:flex;
+    justify-content:center;
+  }
+  header{
+    justify-content: center;
+  }
+  .mobile-nav{
+    height:100%;
+    width:75%;
+    justify-content: space-around;
+  }
+  .mobile-nav li img{
+    margin:0 5%;
+    padding:0;
+    height:2rem;
+    width:2rem;
+  }
+
+}
+/* Main Content */
+main{
+  position:relative;
+  display:flex;
+  top:4rem;
+  width:100%;
+}
 /* Jumbotron banner */
 .contrast-container-top{
   background-color:rgba(187,171,163, .5);
@@ -63,25 +117,28 @@ nav li a:visited{
   padding:2rem 1.5rem;
   display:flex;
 }
-.contrast-container-top .banner{
+.banner{
   display:flex;
   flex-direction:column;
   align-items:flex-start;
   justify-content:center;
+  width:100%;
 }
 h1{
   color:#3D1E17;
-  font-size:4rem;
+  font-size:3.5rem;
   font-family:'Poppins', sans-serif;
   font-weight:bolder;
   padding:1rem;
   padding-right:2rem;
+  display:flex;
 }
 h2{
   font-size:1.5rem;
   font-weight:bold;
   padding:1.5rem;
   color:#324347;
+  display:flex;
 }
 .banner .button{
   display:flex;
@@ -100,4 +157,91 @@ h2{
 .button a:hover{
   color:#324347;
   transition:color 1s linear .2s;
+}
+@media only screen and (max-width:1000px) and (min-width:781px){
+.contrast-container-top{
+  justify-content:center;
+  align-items:center;
+
+}
+.contrast-container-top img{
+  width:40%;
+  padding:0;
+}
+h1{
+  font-size:2rem;
+}
+h2{
+  font-size:1.5rem;
+  padding:.5rem;
+}
+.banner{
+  height:100%;
+}
+.banner .button{
+  font-size:1rem;
+  margin:1rem;
+}
+}
+@media only screen and (max-width:780px) and (min-width:491px){
+  .contrast-container-top{
+    width:100%;
+    background-image:url("../images/banner.jpg");
+    background-size: cover;
+    height:20rem;
+    justify-content:center;
+    align-items:center;
+  }
+  .contrast-container-top img{
+    display:none;
+  }
+  .banner{
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0,0,0, .3)
+  }
+  h1{
+     color:white;
+  }
+  h2{
+    color:white;
+  }
+}
+@media only screen and (max-width:490px){
+  .contrast-container-top{
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.contrast-container-top img{
+  width:100%;
+  padding:0;
+}
+.banner{
+  align-items: center;
+  justify-content: center;
+  padding:2rem 1rem;
+}
+  h1{
+    display:flex;
+    padding-bottom:2rem;
+    align-items: center;
+    justify-content: center;
+    font-size:2rem;
+    text-align:center;
+    width:90%;
+  }
+  h2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.5rem;
+    text-align:center;
+    width:90%;
+    padding-bottom:1.5rem;
+  }
+  .button{
+    margin:0;
+    font-size:1rem;
+  }
 }
