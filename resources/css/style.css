@@ -428,12 +428,14 @@ color:white;
   display:flex;
   flex-direction:column;
   background-color:#324347;
+  width:100%;
+  align-items:center;
 }
 .curriculum{
   display:flex;
   flex-flow:row wrap;
   padding: 0 2.5rem;
-  justify-content: space-around;
+  justify-content:center;
   width:100%;
 }
 .contrast-container-bot h1{
@@ -453,11 +455,14 @@ color:white;
 }
 .program{
   background-color:white;
-  width:25%;
+  width:28%;
   margin:2rem 1rem;
-
 }
-.program-name h2,
+.program-name h2{
+  font-weight:bolder;
+  color:#324347;
+  font-size:2.25rem;
+}
 .program-info h3{
   color:#3C887E;
 }
@@ -468,4 +473,33 @@ color:white;
 .program-info{
   padding:1rem;
   padding-bottom:2rem;
+}
+@media only screen and (max-width:1160px) and (min-width:570px){
+  .program{
+    width:40%;
+}
+}
+@media only screen and (max-width:570px){
+  .program-image,
+  .program-info{
+    display:none;
+  }
+  .contrast-container-bot h1{
+    padding-bottom:1rem;
+  }
+  .curriculum{
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    margin-bottom:2rem;
+  }
+  .program{
+    width:90%;
+    justify-content:center;
+    align-items:center;
+    margin:.5rem 0;
+  }
+  .program-name h2{
+    font-size:1.5rem;
+  }
 }
