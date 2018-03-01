@@ -18,6 +18,7 @@ h3{
   font-size:1.25rem;
   line-height:2rem;
   font-weight:normal;
+  color:#3C887E;
 }
 /* Header section */
 header{
@@ -119,7 +120,7 @@ main{
     top:4rem;
     width:100%;
 }
-/* Jumbotron banner */
+/* Top block */
 .contrast-container-top{
   background-color:#324347;
   width:100%;
@@ -232,10 +233,9 @@ main{
   flex-direction:row;
   background-color:white;/*#8ECCA8;*/
 }
-/*Left Primary column, second Block*/
+/*Second Block, Left Column*/
 .container-mid-content h1,
 .tile-content h2,
-.container-mid-content h3,
 .container-mid-content p,{
   color:#324347;
 }
@@ -282,7 +282,7 @@ color:white;
   height:100%;
   width:100%;
 }
-/*Right Primary column, second Block*/
+/*Second Block, Right Column*/
 .mid-right{
   width:40%;
   height:100%;
@@ -423,7 +423,7 @@ color:white;
     padding: .5rem 0;
   }
 }
-/* Third section - contrast bottom */
+/* Third block - contrast bottom */
 .contrast-container-bot{
   display:flex;
   flex-direction:column;
@@ -501,5 +501,152 @@ color:white;
   }
   .program-name h2{
     font-size:1.5rem;
+  }
+}
+/* Fourth block */
+.container-bot{
+  display:flex;
+  flex-direction:column;
+}
+.container-bot h1{
+  text-align:center;
+  padding:2rem;
+}
+/* Fourth block - left column */
+.bot-left{
+  padding:2rem 1.5rem;
+  width:60%;
+  display:flex;
+  flex-direction:column;
+}
+.bot-left video{
+  width:100%;
+  padding-bottom:1.5rem;
+}
+.bot-left h2{
+  font-size:2.25rem;
+  padding-bottom:0;
+}
+.bot-left h3{
+  margin:.5rem;
+}
+/* Fourth block - right column */
+.bot-right{
+  width:40%;
+  display:flex;
+  flex-direction:column;
+  padding-top:2.9rem;
+  padding-right:1.5rem;
+}
+.thesis{
+  display:flex;
+  flex-direction:row;
+}
+.fisma{
+  background-color:#8ECCA8;
+  color:white;
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+.fisma img,
+.now-then img{
+  width:35%;
+  height:35%;
+  padding:1rem;
+}
+.now-then{
+  background-color:#324347;
+  color:white;
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+.thesis-content{
+  padding:1rem;
+  padding-left:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:65%;
+}
+.thesis-info h3{
+  color:white;
+  padding-top:1.5rem;
+}
+@media only screen and (max-width:1160px) and (min-width:570px){
+  .fisma img,
+  .now-then img{
+    display:none;
+  }
+  .fisma,
+  .now-then{
+    align-items:center;
+    justify-content:center;
+  }
+}
+@media only screen and (max-width:570px){
+  .bot-right{
+    display:none;
+  }
+  .bot-left{
+    width:100%;
+    margin:0;
+    padding: 0 1rem;
+  }
+  .container-bot h1{
+    padding-bottom:1rem;
+  }
+  .bot-left h2,
+  .bot-left h3{
+    display:none;
+  }
+  .bot-left,
+  .thesis{
+    width:100%;
+  }
+}
+/* Footer */
+footer{
+  display:flex;
+  justify-content:space-between;
+  background-color:#324347;
+  position:relative;
+  top:4rem;
+  width:100%;
+  height:6rem;
+}
+footer p{
+  font-size:1rem;
+  line-height:1.5rem;
+  font-weight:normal;
+  color:white;
+  padding:1rem 1.5rem;
+}
+.links{
+  display:flex;
+
+}
+.links a{
+  font-size:1rem;
+  line-height:1.5rem;
+  font-weight:normal;
+  color:white;
+  padding:1rem 1.5rem;
+}
+.links a:hover{
+  text-decoration: underline;
+}
+@media only screen and (max-width:570px){
+  .links{
+    display:none;
+  }
+  footer{
+    height:3rem;
+    justify-content:center;
+  }
+  footer p{
+    padding:1rem;
+    text-align:center;
   }
 }
