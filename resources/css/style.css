@@ -5,6 +5,20 @@ html{
   line-height:1.2;
   width:100%;
 }
+h1{
+  font-size:3.5rem;
+  font-family:'Poppins', sans-serif;
+  font-weight:bolder;
+}
+h2{
+  font-size:1.5rem;
+  font-weight:bold;
+}
+h3{
+  font-size:1.25rem;
+  line-height:2rem;
+  font-weight:normal;
+}
 /* Header section */
 header{
   position:fixed;
@@ -126,16 +140,11 @@ main{
 }
 .banner h1{
   color:white;
-  font-size:3.5rem;
-  font-family:'Poppins', sans-serif;
-  font-weight:bolder;
   padding:1rem;
   padding-right:2rem;
   display:flex;
 }
 .banner h2{
-  font-size:1.5rem;
-  font-weight:bold;
   padding:1.5rem;
   color:white;
   display:flex;
@@ -166,11 +175,10 @@ main{
   width:40%;
   padding:0;
 }
-h1{
+.banner h1{
   font-size:2rem;
 }
-h2{
-  font-size:1.5rem;
+.banner h2{
   padding:.5rem;
 }
 .banner{
@@ -209,7 +217,6 @@ h2{
     display:flex;
     align-items: center;
     justify-content: center;
-    font-size:1.5rem;
     text-align:center;
     width:90%;
     padding-bottom:1.5rem;
@@ -234,8 +241,6 @@ h2{
 }
 .container-mid-content h1{
   font-size:3.5rem;
-  font-family:'Poppins', sans-serif;
-  font-weight:bolder;
   padding-top:2rem;
   color:#324347;
 }
@@ -291,13 +296,10 @@ color:white;
   height:33.33%;
 }
 .image{
-  width:35%;
-  height:35%;
   padding:1rem;
-}
-.image{
-  width:100%;
+  width:80%;
   height:100%;
+  padding-right:0;
 }
 .mobile-image{
   display:none;
@@ -326,6 +328,13 @@ color:white;
   font-size:1.05rem;
   transition:font-size .5s ease-in .1s, color .5s ease-in .1s;
 }
+.tile-content h2{
+  padding:1rem;
+
+}
+.tile-content h3{
+  padding:1rem;
+}
 @media only screen and (max-width:1160px) and (min-width:570px){
   .image{
     display:none;
@@ -348,12 +357,27 @@ color:white;
     align-items: content;
   }
   .container-mid-content h1{
-    font-size:3rem;
+    font-size:2rem;
   }
   .mid-left img{
     height:85%;
     width:85%;
   }
+.tile-content h2{
+  font-size:1.5rem;
+}
+.tile-content h3{
+  font-size:1rem;
+}
+.tile-content a{
+  text-decoration:underline;
+}
+.container-mid-content h3{
+  width:80%;
+}
+.mid-left{
+  padding-right:.5rem;
+}
 }
 @media only screen and (max-width:570px){
   .mid-left{
@@ -398,4 +422,50 @@ color:white;
     background-color:white;
     padding: .5rem 0;
   }
+}
+/* Third section - contrast bottom */
+.contrast-container-bot{
+  display:flex;
+  flex-direction:column;
+  background-color:#324347;
+}
+.curriculum{
+  display:flex;
+  flex-flow:row wrap;
+  padding: 0 2.5rem;
+  justify-content: space-around;
+  width:100%;
+}
+.contrast-container-bot h1{
+  padding-top:2rem;
+  color:white;
+  text-align:center;
+}
+.contrast-container-bot h2{
+  color:white;
+}
+.program-image{
+  width:100%;
+}
+.program-image img{
+  height:auto;
+  width:100%;
+}
+.program{
+  background-color:white;
+  width:25%;
+  margin:2rem 1rem;
+
+}
+.program-name h2,
+.program-info h3{
+  color:#3C887E;
+}
+.program-name{
+  padding:1rem;
+  padding-bottom:0;
+}
+.program-info{
+  padding:1rem;
+  padding-bottom:2rem;
 }
